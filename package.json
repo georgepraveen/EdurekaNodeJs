@@ -1,0 +1,21 @@
+{
+  "name": "nodejsserver",
+  "version": "1.0.0",
+  "description": "employeedirectoryserver",
+  "main": "nodeserver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "employee",
+    "directory"
+  ],
+  "author": "Praveen George",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.4"
+  }
+}
