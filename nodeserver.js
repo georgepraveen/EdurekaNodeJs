@@ -31,14 +31,14 @@ app.use(function (req,res,next) {
     next();    
 })
 
-app.use('/',require('./api'));
+app.use('/api',require('./api'));
 
 app.use(function(err,req,res,next){
     res.status(422).send({error:err.message})
 })
 
-var port = process.env.port || 8080;
-
+var port = process.env.PORT || 8080;
+console.log(port);
 app.listen(port, function(){
     console.log('Server running at http://127.0.0.1:8080/');
 });
