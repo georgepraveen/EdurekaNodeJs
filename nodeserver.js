@@ -31,7 +31,7 @@ app.use(function (req,res,next) {
     next();    
 })
 
-app.use('/api',require('./api'));
+app.use('/',require('./api'));
 
 app.use(function(err,req,res,next){
     res.status(422).send({error:err.message})
